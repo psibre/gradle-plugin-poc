@@ -1,0 +1,13 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+}
+
+gradlePlugin {
+    plugins {
+        hello {
+            id = 'org.m2ci.msp.hello-plugin'
+            implementationClass = 'org.m2ci.msp.hello.HelloPlugin'
+        }
+    }
+}
