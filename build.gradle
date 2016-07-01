@@ -13,3 +13,16 @@ gradlePlugin {
         }
     }
 }
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'org.testng:testng:6.9.10'
+}
+
+test {
+    useTestNG()
+    systemProperty 'testDir', temporaryDir
+}
